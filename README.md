@@ -6,9 +6,11 @@
 
 ## 🖼️ Preview
 
-| Light Mode | Dark Mode |
-|---|---|
-| *(Add screenshot here)* | *(Add screenshot here)* |
+### Light Mode
+![Light Mode](assets/images/light-mode.png)
+
+### Dark Mode
+![Dark Mode](assets/images/dark-mode.png)
 
 ---
 
@@ -27,8 +29,6 @@
 ---
 
 ## 📁 Project Structure
-
-```
 mazer-custom-dashboard/
 │
 ├── index.html              # Login / landing page
@@ -36,15 +36,16 @@ mazer-custom-dashboard/
 ├── README.md
 │
 └── assets/
-    ├── css/
-    │   └── custom.css      # Full custom theme (CSS variables, components)
-    ├── js/
-    │   ├── api.js          # Data fetching module (Fetch API + cache)
-    │   └── main.js         # UI controller (charts, tables, interactivity)
-    ├── data/
-    │   └── data.json       # Mock data source (stats, chart, users, transactions)
-    └── images/             # Place screenshots / assets here
-```
+├── css/
+│   └── custom.css      # Full custom theme (CSS variables, components)
+├── js/
+│   ├── api.js          # Data fetching module (Fetch API + cache)
+│   └── main.js         # UI controller (charts, tables, interactivity)
+├── data/
+│   └── data.json       # Mock data source (stats, chart, users, transactions)
+└── images/
+├── light-mode.png
+└── dark-mode.png
 
 ---
 
@@ -64,44 +65,21 @@ mazer-custom-dashboard/
 
 ## 🚀 Setup Instructions
 
-### Option A — Run Locally (Recommended)
+### Run Locally
 
 You need a local server because `fetch()` requires HTTP (not `file://`).
 
-**Using VS Code Live Server:**
-1. Install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-2. Open the project folder in VS Code
-3. Right-click `index.html` → **Open with Live Server**
-4. Navigate to `http://127.0.0.1:5500`
-
 **Using Python:**
 ```bash
-cd mazer-custom-dashboard
+git clone https://github.com/lasyagovindwar/mazer-project.git
+cd mazer-project
 python -m http.server 8080
-# Open http://localhost:8080
 ```
+Then open: **http://localhost:8080**
 
-**Using Node.js (`serve`):**
-```bash
-npx serve mazer-custom-dashboard
-```
-
-### Option B — From the Mazer Base Template
-
-```bash
-# 1. Fork & clone Mazer
-git clone https://github.com/zuramai/mazer.git
-cd mazer
-
-# 2. Copy customized files into the correct locations
-cp /path/to/mazer-custom-dashboard/index.html .
-cp /path/to/mazer-custom-dashboard/dashboard.html .
-cp -r /path/to/mazer-custom-dashboard/assets/css/custom.css assets/compiled/css/
-cp -r /path/to/mazer-custom-dashboard/assets/js/ assets/js/
-cp -r /path/to/mazer-custom-dashboard/assets/data/ assets/data/
-
-# 3. Serve and open
-```
+**Using VS Code:**
+1. Install [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+2. Right-click `index.html` → **Open with Live Server**
 
 ---
 
@@ -119,15 +97,12 @@ cp -r /path/to/mazer-custom-dashboard/assets/data/ assets/data/
 ---
 
 ## 🔄 Data Flow
-
-```
 data.json  ──→  api.js (fetch + cache)  ──→  main.js (bind to DOM)
-                                              ├── renderStats()
-                                              ├── renderChart(period)
-                                              ├── renderTransactions()
-                                              ├── renderUsers()
-                                              └── renderActivityFeed()
-```
+├── renderStats()
+├── renderChart(period)
+├── renderTransactions()
+├── renderUsers()
+└── renderActivityFeed()
 
 ---
 
@@ -135,7 +110,7 @@ data.json  ──→  api.js (fetch + cache)  ──→  main.js (bind to DOM)
 
 - Toggle using the moon/sun icon in the top bar
 - Preference is saved to `localStorage` and applied on next load
-- The Chart.js chart re-renders with updated colors automatically
+- Chart.js chart re-renders with updated colors automatically
 
 ---
 
@@ -147,46 +122,11 @@ data.json  ──→  api.js (fetch + cache)  ──→  main.js (bind to DOM)
 
 ---
 
-## 📤 Deployment (GitHub Pages)
 
-```bash
-# After forking & cloning:
-git add .
-git commit -m "feat: add NexusAdmin custom dashboard"
-git push origin main
-
-# In GitHub repo → Settings → Pages → Source: main branch → /root
-# Live URL: https://<your-username>.github.io/mazer/
-```
-
----
-
-## ✅ Pre-Submission Checklist
-
-- [ ] All 6 files present and connected
-- [ ] `data.json` loads correctly (test in browser DevTools → Network tab)
-- [ ] Stats cards animate on load
-- [ ] Chart renders for both Monthly and Weekly
-- [ ] Dark mode toggles and persists on refresh
-- [ ] Search filters both tables correctly
-- [ ] Activity feed populates
-- [ ] Notification bell opens/closes panel
-- [ ] Sidebar hamburger works on mobile (< 992px)
-- [ ] No console errors
-- [ ] README is complete with your name / repo link
-- [ ] Pushed to GitHub with clean commit history
-
----
-
-## 👤 Author
-
-**[Your Name]**  
-Front-End Intern  
-GitHub: [@yourusername](https://github.com/yourusername)
 
 ---
 
 ## 📄 License
 
 Based on [Mazer](https://github.com/zuramai/mazer) by Zuramai — MIT License.  
-Custom work © 2026 [Your Name].
+Custom work © 2026 
