@@ -1,0 +1,46 @@
+{
+  "stats": {
+    "totalUsers": 24891,
+    "revenue": 128450,
+    "growth": 18.4,
+    "activeProjects": 312
+  },
+  "chartData": {
+    "monthly": {
+      "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "revenue": [42000, 55000, 48000, 61000, 79000, 95000, 88000, 102000, 115000, 98000, 121000, 128450],
+      "users": [1200, 1850, 2100, 2400, 3100, 3800, 4200, 5100, 6300, 7200, 8900, 10200]
+    },
+    "weekly": {
+      "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "revenue": [18200, 22400, 19800, 26100, 31500, 14200, 9800],
+      "users": [420, 610, 530, 720, 890, 340, 210]
+    }
+  },
+  "recentTransactions": [
+    { "id": "TXN-8821", "user": "Aarav Sharma", "avatar": "AS", "type": "Subscription", "amount": 4999, "status": "completed", "date": "2026-04-19" },
+    { "id": "TXN-8820", "user": "Priya Reddy", "avatar": "PR", "type": "One-time", "amount": 12500, "status": "completed", "date": "2026-04-19" },
+    { "id": "TXN-8819", "user": "Rohan Mehta", "avatar": "RM", "type": "Subscription", "amount": 4999, "status": "pending", "date": "2026-04-18" },
+    { "id": "TXN-8818", "user": "Sneha Patil", "avatar": "SP", "type": "Refund", "amount": -2000, "status": "refunded", "date": "2026-04-18" },
+    { "id": "TXN-8817", "user": "Karan Joshi", "avatar": "KJ", "type": "One-time", "amount": 8750, "status": "completed", "date": "2026-04-17" },
+    { "id": "TXN-8816", "user": "Nisha Agarwal", "avatar": "NA", "type": "Subscription", "amount": 4999, "status": "completed", "date": "2026-04-17" },
+    { "id": "TXN-8815", "user": "Vikram Das", "avatar": "VD", "type": "One-time", "amount": 15000, "status": "failed", "date": "2026-04-16" },
+    { "id": "TXN-8814", "user": "Anjali Singh", "avatar": "AS", "type": "Subscription", "amount": 4999, "status": "completed", "date": "2026-04-16" }
+  ],
+  "recentUsers": [
+    { "id": "USR-1021", "name": "Aarav Sharma", "avatar": "AS", "email": "aarav.sharma@example.com", "role": "Admin", "status": "active", "joined": "2026-04-15" },
+    { "id": "USR-1022", "name": "Priya Reddy", "avatar": "PR", "email": "priya.reddy@example.com", "role": "Editor", "status": "active", "joined": "2026-04-14" },
+    { "id": "USR-1023", "name": "Rohan Mehta", "avatar": "RM", "email": "rohan.mehta@example.com", "role": "Viewer", "status": "inactive", "joined": "2026-04-13" },
+    { "id": "USR-1024", "name": "Sneha Patil", "avatar": "SP", "email": "sneha.patil@example.com", "role": "Editor", "status": "active", "joined": "2026-04-12" },
+    { "id": "USR-1025", "name": "Karan Joshi", "avatar": "KJ", "email": "karan.joshi@example.com", "role": "Admin", "status": "active", "joined": "2026-04-11" },
+    { "id": "USR-1026", "name": "Nisha Agarwal", "avatar": "NA", "email": "nisha.agarwal@example.com", "role": "Viewer", "status": "active", "joined": "2026-04-10" }
+  ],
+  "activityFeed": [
+    { "id": 1, "user": "Priya Reddy", "avatar": "PR", "action": "published a new article", "target": "Q2 Financial Report", "time": "2 minutes ago", "icon": "file-text", "color": "primary" },
+    { "id": 2, "user": "Aarav Sharma", "avatar": "AS", "action": "added a new user", "target": "Vikram Das", "time": "14 minutes ago", "icon": "user-plus", "color": "success" },
+    { "id": 3, "user": "System", "avatar": "SY", "action": "backup completed successfully", "target": "Database v2.4.1", "time": "1 hour ago", "icon": "database", "color": "info" },
+    { "id": 4, "user": "Rohan Mehta", "avatar": "RM", "action": "updated project settings", "target": "Atlas Platform", "time": "3 hours ago", "icon": "settings", "color": "warning" },
+    { "id": 5, "user": "Sneha Patil", "avatar": "SP", "action": "raised a support ticket", "target": "Billing Issue #449", "time": "5 hours ago", "icon": "alert-circle", "color": "danger" },
+    { "id": 6, "user": "Karan Joshi", "avatar": "KJ", "action": "approved a withdrawal", "target": "₹15,000 payout", "time": "Yesterday", "icon": "check-circle", "color": "success" }
+  ]
+}
