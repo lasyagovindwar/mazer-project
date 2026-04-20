@@ -6,11 +6,9 @@
 
 ## 🖼️ Preview
 
-### Light Mode
-![Light Mode](assets/images/light-mode.png)
-
-### Dark Mode
-![Dark Mode](assets/images/dark-mode.png)
+| Light Mode | Dark Mode |
+|---|---|
+| ![Light Mode](assets/images/light-mode.png) | ![Dark Mode](assets/images/dark-mode.png) |
 
 ---
 
@@ -29,6 +27,8 @@
 ---
 
 ## 📁 Project Structure
+
+```
 mazer-custom-dashboard/
 │
 ├── index.html              # Login / landing page
@@ -36,16 +36,17 @@ mazer-custom-dashboard/
 ├── README.md
 │
 └── assets/
-├── css/
-│   └── custom.css      # Full custom theme (CSS variables, components)
-├── js/
-│   ├── api.js          # Data fetching module (Fetch API + cache)
-│   └── main.js         # UI controller (charts, tables, interactivity)
-├── data/
-│   └── data.json       # Mock data source (stats, chart, users, transactions)
-└── images/
-├── light-mode.png
-└── dark-mode.png
+    ├── css/
+    │   └── custom.css      # Full custom theme (CSS variables, components)
+    ├── js/
+    │   ├── api.js          # Data fetching module (Fetch API + cache)
+    │   └── main.js         # UI controller (charts, tables, interactivity)
+    ├── data/
+    │   └── data.json       # Mock data source (stats, chart, users, transactions)
+    └── images/
+        ├── light-mode.png
+        └── dark-mode.png
+```
 
 ---
 
@@ -65,20 +66,21 @@ mazer-custom-dashboard/
 
 ## 🚀 Setup Instructions
 
-### Run Locally
+> **Note:** A local server is required because `fetch()` does not work over the `file://` protocol.
 
-You need a local server because `fetch()` requires HTTP (not `file://`).
+### Using Python
 
-**Using Python:**
 ```bash
 git clone https://github.com/lasyagovindwar/mazer-project.git
 cd mazer-project
 python -m http.server 8080
 ```
+
 Then open: **http://localhost:8080**
 
-**Using VS Code:**
-1. Install [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+### Using VS Code
+
+1. Install the **Live Server** extension
 2. Right-click `index.html` → **Open with Live Server**
 
 ---
@@ -97,12 +99,15 @@ Then open: **http://localhost:8080**
 ---
 
 ## 🔄 Data Flow
-data.json  ──→  api.js (fetch + cache)  ──→  main.js (bind to DOM)
-├── renderStats()
-├── renderChart(period)
-├── renderTransactions()
-├── renderUsers()
-└── renderActivityFeed()
+
+```
+data.json ──→ api.js (fetch + cache) ──→ main.js (bind to DOM)
+                                          ├── renderStats()
+                                          ├── renderChart(period)
+                                          ├── renderTransactions()
+                                          ├── renderUsers()
+                                          └── renderActivityFeed()
+```
 
 ---
 
@@ -122,11 +127,7 @@ data.json  ──→  api.js (fetch + cache)  ──→  main.js (bind to DOM)
 
 ---
 
-
-
----
-
 ## 📄 License
 
 Based on [Mazer](https://github.com/zuramai/mazer) by Zuramai — MIT License.  
-Custom work © 2026 
+Custom work © 2026
